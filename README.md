@@ -9,13 +9,13 @@ The application requires:
 - [Python](https://www.python.org/) >=3.9, <3.11
 - [pip](https://pip.pypa.io/en/stable/)
 
-## Download
+## Download & Installation
 
-You can download the application on the [downloads page](https://github.com/BergLucas/ImageAnalystRKNN/releases).
+There is only one way to download and install the application.
 
-## Installation
+### Using the GitHub releases
 
-You can install the application by running the following command:
+You can download the application on the [downloads page](https://github.com/BergLucas/ImageAnalystRKNN/releases). Then, you can install the application by running the following command:
 
 ```bash
 pip install image_analyst_rknn-X.X.X-py3-none-any.whl
