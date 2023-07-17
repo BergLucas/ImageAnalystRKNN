@@ -176,17 +176,23 @@ pydocstyle = ">=2.1"
 
 [[package]]
 name = "image-analyst"
-version = "0.1.1"
+version = "0.1.2"
 description = "ImageAnalyst is a library that simplifies image analysis."
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "image_analyst-0.1.1-py3-none-any.whl", hash = "sha256:85d0535914afddf8558a4c6c9c862a545ae270def6d97861fbdd73e6d92642c0"},
-    {file = "image_analyst-0.1.1.tar.gz", hash = "sha256:3c1e4a7bad6f2b0d774587f6139aa42f5434c4c5f2d287763e5ca00dcff5d492"},
+    {file = "image_analyst-0.1.2-py3-none-any.whl", hash = "sha256:6ed6ff443d8cd41763badb24a3760fb35e3e7ca14ae5ff4ccb9fae1d60556ca2"},
+    {file = "image_analyst-0.1.2.tar.gz", hash = "sha256:be1ed1cdab76a7e01a1e9c43c3e286e0bc6d97dacbef6214498d50d95b008ea4"},
 ]
 
 [package.dependencies]
 numpy = ">=1.24.3,<2.0.0"
+
+[package.extras]
+cv2 = ["image-analyst-cv2[cv2] (>=0.1.0,<0.2.0)"]
+hf = ["image-analyst-hf (>=0.1.0,<0.2.0)"]
+onnx = ["image-analyst-onnx (>=0.1.0,<0.2.0)"]
+tf = ["image-analyst-tf (>=0.1.1,<0.2.0)"]
 
 [[package]]
 name = "mccabe"
@@ -530,4 +536,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9, <3.11"
-content-hash = "1066ddd4d944d631a9c9981e99546ea39a72791fcefa9993655a58dec5bc779e"
+content-hash = "f460fd660ef2f3162ee5bdc723826086affcee74d10ce429b4d9e56dde3b487d"
