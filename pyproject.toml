@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "image-analyst-rknn"
-version = "0.1.1"
+version = "0.2.0"
 description = "ImageAnalyst RKNN is an extension to the ImageAnalyst library, providing additional models and functions using rknn-lite2."
 authors = ["Lucas Berg <55436804+BergLucas@users.noreply.github.com>"]
 repository = "https://github.com/BergLucas/ImageAnalystRKNN"
@@ -16,7 +16,7 @@ packages = [{ include = "image_analyst", from = "src" }]
 [tool.poetry.dependencies]
 python = ">=3.9, <3.11"
 numpy = "^1.24.3"
-image-analyst = "^0.1.2"
+image-analyst = "^0.2.0"
 rknn-toolkit-lite2 = [
     {url = "https://raw.githubusercontent.com/rockchip-linux/rknn-toolkit2/d333c7d9d05b2cf8fc4605f395a184b3bd6bd2f5/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.5.0-cp39-cp39-linux_aarch64.whl", python = "~3.9", platform = "linux"},
     {url = "https://raw.githubusercontent.com/rockchip-linux/rknn-toolkit2/d333c7d9d05b2cf8fc4605f395a184b3bd6bd2f5/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.5.0-cp310-cp310-linux_aarch64.whl", python = "~3.10", platform = "linux"}
