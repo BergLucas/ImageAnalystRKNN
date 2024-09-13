@@ -1,24 +1,31 @@
 from __future__ import annotations
-from image_analyst.exceptions import DownloadFailedException
-from image_analyst.utils import download_file, ReportFunction
+
+import logging
+from typing import Optional
+
+import numpy as np
+from rknnlite.api import RKNNLite
+
 from image_analyst.exceptions import (
-    ModelLoadingFailedException,
-    InvalidDtypeException,
     DetectionFailedException,
+    DownloadFailedException,
+    InvalidDtypeException,
+    ModelLoadingFailedException,
 )
 from image_analyst.image import (
-    ImageFormat,
     BoundingBox,
-    ImageEmbedder,
     EmbeddingFunction,
+    ImageEmbedder,
+    ImageFormat,
 )
-from image_analyst.utils import NmsFunction, NmsPython, sigmoid
-from image_analyst.models import ODModel, Detection
-from rknnlite.api import RKNNLite
-from typing import Optional
-import numpy as np
-import logging
-
+from image_analyst.models import Detection, ODModel
+from image_analyst.utils import (
+    NmsFunction,
+    NmsPython,
+    ReportFunction,
+    download_file,
+    sigmoid,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -187,8 +194,10 @@ class YoloV3Rknn(ODModel):
         try:
             with open(labels_path, "rt") as f:
                 self.__supported_classes = tuple(f.read().splitlines())
-        except OSError:
-            raise ModelLoadingFailedException("Cannot load the supported classes.")
+        except OSError as error:
+            raise ModelLoadingFailedException(
+                "Cannot load the supported classes."
+            ) from error
 
         self.__rknn = RKNNLite()
 
