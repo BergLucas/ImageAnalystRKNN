@@ -61,12 +61,12 @@ class YoloV3Rknn(ODModel):
         """
         try:
             model_path = download_file(
-                "https://github.com/BergLucas/ImageAnalystRKNN/releases/download/v0.2.0/rknn-yolov3-coco.rknn",  # noqa: E501
+                "https://github.com/BergLucas/ImageAnalystRKNN-models/releases/download/v1.0.0/rknn-yolov3-coco.rknn",  # noqa: E501
                 "rknn-yolov3-coco.rknn",
                 report_callback,
             )
             labels_path = download_file(
-                "https://github.com/BergLucas/ImageAnalystRKNN/releases/download/v0.2.0/rknn-yolov3-coco.names",  # noqa: E501
+                "https://github.com/BergLucas/ImageAnalystRKNN-models/releases/download/v1.0.0/rknn-yolov3-coco.names",  # noqa: E501
                 "rknn-yolov3-coco.names",
                 report_callback,
             )
@@ -130,12 +130,12 @@ class YoloV3Rknn(ODModel):
         """
         try:
             model_path = download_file(
-                "https://github.com/BergLucas/ImageAnalystRKNN/releases/download/v0.2.0/rknn-yolov3-tiny-coco.rknn",  # noqa: E501
+                "https://github.com/BergLucas/ImageAnalystRKNN-models/releases/download/v1.0.0/rknn-yolov3-tiny-coco.rknn",  # noqa: E501
                 "rknn-yolov3-tiny-coco.rknn",
                 report_callback,
             )
             labels_path = download_file(
-                "https://github.com/BergLucas/ImageAnalystRKNN/releases/download/v0.2.0/rknn-yolov3-tiny-coco.names",  # noqa: E501
+                "https://github.com/BergLucas/ImageAnalystRKNN-models/releases/download/v1.0.0/rknn-yolov3-tiny-coco.names",  # noqa: E501
                 "rknn-yolov3-tiny-coco.names",
                 report_callback,
             )
