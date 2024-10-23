@@ -1,6 +1,6 @@
 # ImageAnalyst RKNN
 
-ImageAnalyst RKNN is an extension to the [ImageAnalyst](https://github.com/BergLucas/ImageAnalyst) library, providing additional models and functions using [rknn-lite2](https://github.com/rockchip-linux/rknn-toolkit2).
+ImageAnalyst RKNN is an extension to the [ImageAnalyst](https://github.com/BergLucas/ImageAnalyst) library, providing additional models and functions using [rknn-toolkit-lite2](https://github.com/airockchip/rknn-toolkit2).
 
 ## Requirements
 
