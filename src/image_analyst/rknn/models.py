@@ -238,7 +238,7 @@ class YoloV3Rknn(ODModel):
             raise DetectionFailedException("Failed to initialise runtime.")
 
         try:
-            outputs = self.__rknn.inference(inputs=[embedded_image])
+            outputs = self.__rknn.inference(inputs=[np.expand_dims(embedded_image)])
             self.__rknn.release()
         except Exception as e:
             raise DetectionFailedException("Failed to detect objects.") from e
