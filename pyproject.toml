@@ -14,12 +14,16 @@ classifiers = [
 packages = [{ include = "image_analyst", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.9, <3.11"
+python = "^3.9"
 numpy = "^1.24.3"
 image-analyst = "^0.2.0"
-rknn-toolkit-lite2 = [
-    { url = "https://raw.githubusercontent.com/rockchip-linux/rknn-toolkit2/d333c7d9d05b2cf8fc4605f395a184b3bd6bd2f5/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.5.0-cp39-cp39-linux_aarch64.whl", python = "~3.9", platform = "linux" },
-    { url = "https://raw.githubusercontent.com/rockchip-linux/rknn-toolkit2/d333c7d9d05b2cf8fc4605f395a184b3bd6bd2f5/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.5.0-cp310-cp310-linux_aarch64.whl", python = "~3.10", platform = "linux" },
+rknn_toolkit_lite2 = [
+    { url = "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknn-toolkit-lite2/packages/rknn_toolkit_lite2-2.2.0-cp37-cp37m-linux_aarch64.whl", python = "~3.7", platform = "linux" },
+    { url = "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknn-toolkit-lite2/packages/rknn_toolkit_lite2-2.2.0-cp38-cp38-linux_aarch64.whl", python = "~3.8", platform = "linux" },
+    { url = "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknn-toolkit-lite2/packages/rknn_toolkit_lite2-2.2.0-cp39-cp39-linux_aarch64.whl", python = "~3.9", platform = "linux" },
+    { url = "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknn-toolkit-lite2/packages/rknn_toolkit_lite2-2.2.0-cp310-cp310-linux_aarch64.whl", python = "~3.10", platform = "linux" },
+    { url = "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknn-toolkit-lite2/packages/rknn_toolkit_lite2-2.2.0-cp311-cp311-linux_aarch64.whl", python = "~3.11", platform = "linux" },
+    { url = "https://raw.githubusercontent.com/airockchip/rknn-toolkit2/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknn-toolkit-lite2/packages/rknn_toolkit_lite2-2.2.0-cp312-cp312-linux_aarch64.whl", python = "~3.12", platform = "linux" },
 ]
 
 [tool.poetry.group.dev.dependencies]

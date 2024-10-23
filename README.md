@@ -8,6 +8,7 @@ The application requires:
 
 - [Python](https://www.python.org/) >=3.9, <3.11
 - [pip](https://pip.pypa.io/en/stable/)
+- [librknnrt.so](https://github.com/airockchip/rknn-toolkit2/blob/7efa763d1da04c4c4447fa5632dc2d9c94fb3063/rknpu2/runtime/Linux/librknn_api/aarch64/librknnrt.so)
 
 ## Download & Installation
 
